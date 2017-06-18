@@ -17,12 +17,17 @@ var admin_component_1 = require('./admin.component');
 var superadmin_component_1 = require('./superadmin.component');
 var member_component_1 = require('./member.component');
 var routes = [
-    { path: 'about', component: about_component_1.AboutComponent },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: home_component_1.HomeComponent },
-    { path: 'roles', component: roles_component_1.RolesComponent },
-    { path: 'roles/admin', component: admin_component_1.AdminComponent },
-    { path: 'roles/superadmin', component: superadmin_component_1.SuperadminComponent },
-    { path: 'roles/member', component: member_component_1.MemberComponent }
+    { path: 'about', component: about_component_1.AboutComponent },
+    { path: 'roles', component: roles_component_1.RolesComponent,
+        children: [
+            { path: '', redirectTo: 'admin', pathMatch: 'full' },
+            { path: 'admin', component: admin_component_1.AdminComponent },
+            { path: 'superadmin', component: superadmin_component_1.SuperadminComponent },
+            { path: 'member', component: member_component_1.MemberComponent }
+        ]
+    }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
