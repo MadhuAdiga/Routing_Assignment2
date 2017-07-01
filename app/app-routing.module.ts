@@ -27,4 +27,5 @@ const routes : Routes = [// Declare a routes variable which contains the paths a
 })
 
 export class AppRoutingModule {}
-export const routingComponents = [AboutComponent, HomeComponent, RolesComponent, AdminComponent, SuperadminComponent, MemberComponent]//Export the six routed components used in this application
+export const routingComponents = [AboutComponent, HomeComponent, RolesComponent, AdminComponent, SuperadminComponent, MemberComponent]
+//Export the three parent and three child routed components used in this application

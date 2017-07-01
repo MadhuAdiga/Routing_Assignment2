@@ -42,5 +42,6 @@ var AppRoutingModule = (function () {
     return AppRoutingModule;
 }());
 exports.AppRoutingModule = AppRoutingModule;
-exports.routingComponents = [about_component_1.AboutComponent, home_component_1.HomeComponent, roles_component_1.RolesComponent, admin_component_1.AdminComponent, superadmin_component_1.SuperadminComponent, member_component_1.MemberComponent]; //Export the six routed components used in this application
+exports.routingComponents = [about_component_1.AboutComponent, home_component_1.HomeComponent, roles_component_1.RolesComponent, admin_component_1.AdminComponent, superadmin_component_1.SuperadminComponent, member_component_1.MemberComponent];
+//Export the three parent and three child routed components used in this application
 //# sourceMappingURL=app-routing.module.js.map
